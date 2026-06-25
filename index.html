@@ -1,0 +1,673 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>&lt;!DOCTYPE html&gt;</p>
+
+<p class=MsoNormal>&lt;html lang=&quot;vi&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;head&gt;</p>
+
+<p class=MsoNormal>    &lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+
+<p class=MsoNormal>    &lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
+
+<p class=MsoNormal>    &lt;title&gt;Modern SaaS Landing Page Demo&lt;/title&gt;</p>
+
+<p class=MsoNormal>    &lt;style&gt;</p>
+
+<p class=MsoNormal>        /* --- 1. BI&#7870;N CSS (COLORS &amp; VARIABLES)
+--- */</p>
+
+<p class=MsoNormal>        :root {</p>
+
+<p class=MsoNormal>            --bg-main: #0f172a;       /* Màu n&#7873;n chính
+(Slate 900) */</p>
+
+<p class=MsoNormal>            --bg-card: #1e293b;       /* Màu n&#7873;n th&#7867;
+(Slate 800) */</p>
+
+<p class=MsoNormal>            --primary: #6366f1;       /* Màu ch&#7911;
+&#273;&#7841;o (Indigo 500) */</p>
+
+<p class=MsoNormal>            --primary-glow: rgba(99, 102, 241, 0.15);</p>
+
+<p class=MsoNormal>            --accent: #10b981;        /* Màu t&#7841;o
+&#273;i&#7875;m nh&#7845;n (Emerald 500) */</p>
+
+<p class=MsoNormal>            --text-main: #f8fafc;     /* Ch&#7919; chính */</p>
+
+<p class=MsoNormal>            --text-muted: #94a3b8;    /* Ch&#7919; ph&#7909;
+*/</p>
+
+<p class=MsoNormal>            --max-width: 1200px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* --- 2. RESET T&#7852;P TIN GIAO DI&#7878;N --- */</p>
+
+<p class=MsoNormal>        * {</p>
+
+<p class=MsoNormal>            margin: 0;</p>
+
+<p class=MsoNormal>            padding: 0;</p>
+
+<p class=MsoNormal>            box-sizing: border-box;</p>
+
+<p class=MsoNormal>            font-family: 'Segoe UI', system-ui,
+-apple-system, sans-serif;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        body {</p>
+
+<p class=MsoNormal>            background-color: var(--bg-main);</p>
+
+<p class=MsoNormal>            color: var(--text-main);</p>
+
+<p class=MsoNormal>            line-height: 1.6;</p>
+
+<p class=MsoNormal>            overflow-x: hidden;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        a {</p>
+
+<p class=MsoNormal>            text-decoration: none;</p>
+
+<p class=MsoNormal>            color: inherit;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* --- 3. THANH &#272;I&#7872;U H&#431;&#7898;NG
+(NAVBAR) --- */</p>
+
+<p class=MsoNormal>        .navbar {</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            justify-content: space-between;</p>
+
+<p class=MsoNormal>            align-items: center;</p>
+
+<p class=MsoNormal>            max-width: var(--max-width);</p>
+
+<p class=MsoNormal>            margin: 0 auto;</p>
+
+<p class=MsoNormal>            padding: 20px;</p>
+
+<p class=MsoNormal>            border-bottom: 1px solid rgba(255, 255, 255,
+0.05);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .logo {</p>
+
+<p class=MsoNormal>            font-size: 24px;</p>
+
+<p class=MsoNormal>            font-weight: 800;</p>
+
+<p class=MsoNormal>            background: linear-gradient(to right, #6366f1,
+#a855f7);</p>
+
+<p class=MsoNormal>            -webkit-background-clip: text;</p>
+
+<p class=MsoNormal>            -webkit-text-fill-color: transparent;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .nav-links {</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            gap: 30px;</p>
+
+<p class=MsoNormal>            list-style: none;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .nav-links a {</p>
+
+<p class=MsoNormal>            color: var(--text-muted);</p>
+
+<p class=MsoNormal>            font-weight: 500;</p>
+
+<p class=MsoNormal>            transition: color 0.3s;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .nav-links a:hover {</p>
+
+<p class=MsoNormal>            color: var(--text-main);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .btn-nav {</p>
+
+<p class=MsoNormal>            background: var(--primary);</p>
+
+<p class=MsoNormal>            padding: 8px 20px;</p>
+
+<p class=MsoNormal>            border-radius: 8px;</p>
+
+<p class=MsoNormal>            font-weight: 600;</p>
+
+<p class=MsoNormal>            transition: transform 0.2s, background 0.3s;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .btn-nav:hover {</p>
+
+<p class=MsoNormal>            background: #4f46e5;</p>
+
+<p class=MsoNormal>            transform: translateY(-2px);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* --- 4. KHU V&#7920;C HERO (GI&#7898;I THI&#7878;U
+CHÍNH) --- */</p>
+
+<p class=MsoNormal>        .hero {</p>
+
+<p class=MsoNormal>            max-width: var(--max-width);</p>
+
+<p class=MsoNormal>            margin: 80px auto;</p>
+
+<p class=MsoNormal>            padding: 0 20px;</p>
+
+<p class=MsoNormal>            text-align: center;</p>
+
+<p class=MsoNormal>            position: relative;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* T&#7841;o m&#7897;t qu&#7847;ng sáng m&#7901;
+phía sau làm &#273;i&#7875;m nh&#7845;n */</p>
+
+<p class=MsoNormal>        .hero::before {</p>
+
+<p class=MsoNormal>            content: '';</p>
+
+<p class=MsoNormal>            position: absolute;</p>
+
+<p class=MsoNormal>            top: -10%;</p>
+
+<p class=MsoNormal>            left: 50%;</p>
+
+<p class=MsoNormal>            transform: translateX(-50%);</p>
+
+<p class=MsoNormal>            width: 400px;</p>
+
+<p class=MsoNormal>            height: 400px;</p>
+
+<p class=MsoNormal>            background: var(--primary);</p>
+
+<p class=MsoNormal>            filter: blur(150px);</p>
+
+<p class=MsoNormal>            opacity: 0.2;</p>
+
+<p class=MsoNormal>            z-index: -1;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .hero h1 {</p>
+
+<p class=MsoNormal>            font-size: 52px;</p>
+
+<p class=MsoNormal>            font-weight: 800;</p>
+
+<p class=MsoNormal>            line-height: 1.2;</p>
+
+<p class=MsoNormal>            margin-bottom: 20px;</p>
+
+<p class=MsoNormal>            letter-spacing: -1px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .hero h1 span {</p>
+
+<p class=MsoNormal>            background: linear-gradient(to right, #3b82f6,
+#10b981);</p>
+
+<p class=MsoNormal>            -webkit-background-clip: text;</p>
+
+<p class=MsoNormal>            -webkit-text-fill-color: transparent;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .hero p {</p>
+
+<p class=MsoNormal>            font-size: 18px;</p>
+
+<p class=MsoNormal>            color: var(--text-muted);</p>
+
+<p class=MsoNormal>            max-width: 600px;</p>
+
+<p class=MsoNormal>            margin: 0 auto 40px auto;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .hero-cta {</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            justify-content: center;</p>
+
+<p class=MsoNormal>            gap: 20px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .btn-primary {</p>
+
+<p class=MsoNormal>            background: linear-gradient(135deg, #6366f1 0%,
+#a855f7 100%);</p>
+
+<p class=MsoNormal>            padding: 14px 32px;</p>
+
+<p class=MsoNormal>            border-radius: 50px;</p>
+
+<p class=MsoNormal>            font-weight: 600;</p>
+
+<p class=MsoNormal>            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);</p>
+
+<p class=MsoNormal>            transition: all 0.3s;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .btn-primary:hover {</p>
+
+<p class=MsoNormal>            transform: translateY(-3px);</p>
+
+<p class=MsoNormal>            box-shadow: 0 6px 24px rgba(99, 102, 241, 0.6);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .btn-secondary {</p>
+
+<p class=MsoNormal>            border: 1px solid rgba(255, 255, 255, 0.15);</p>
+
+<p class=MsoNormal>            padding: 14px 32px;</p>
+
+<p class=MsoNormal>            border-radius: 50px;</p>
+
+<p class=MsoNormal>            font-weight: 600;</p>
+
+<p class=MsoNormal>            transition: background 0.3s;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .btn-secondary:hover {</p>
+
+<p class=MsoNormal>            background: rgba(255, 255, 255, 0.05);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* --- 5. L&#431;&#7898;I TÍNH N&#258;NG (FEATURES
+GRID) --- */</p>
+
+<p class=MsoNormal>        .features {</p>
+
+<p class=MsoNormal>            max-width: var(--max-width);</p>
+
+<p class=MsoNormal>            margin: 100px auto;</p>
+
+<p class=MsoNormal>            padding: 0 20px;</p>
+
+<p class=MsoNormal>            display: grid;</p>
+
+<p class=MsoNormal>            grid-template-columns: repeat(auto-fit,
+minmax(300px, 1fr));</p>
+
+<p class=MsoNormal>            gap: 30px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .feature-card {</p>
+
+<p class=MsoNormal>            background: var(--bg-card);</p>
+
+<p class=MsoNormal>            border: 1px solid rgba(255, 255, 255, 0.03);</p>
+
+<p class=MsoNormal>            border-radius: 16px;</p>
+
+<p class=MsoNormal>            padding: 30px;</p>
+
+<p class=MsoNormal>            transition: transform 0.3s, border-color 0.3s;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .feature-card:hover {</p>
+
+<p class=MsoNormal>            transform: translateY(-5px);</p>
+
+<p class=MsoNormal>            border-color: rgba(99, 102, 241, 0.3);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .icon-box {</p>
+
+<p class=MsoNormal>            width: 50px;</p>
+
+<p class=MsoNormal>            height: 50px;</p>
+
+<p class=MsoNormal>            background: var(--primary-glow);</p>
+
+<p class=MsoNormal>            border-radius: 12px;</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            align-items: center;</p>
+
+<p class=MsoNormal>            justify-content: center;</p>
+
+<p class=MsoNormal>            margin-bottom: 20px;</p>
+
+<p class=MsoNormal>            color: var(--primary);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .feature-card h3 {</p>
+
+<p class=MsoNormal>            font-size: 20px;</p>
+
+<p class=MsoNormal>            margin-bottom: 12px;</p>
+
+<p class=MsoNormal>            font-weight: 600;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .feature-card p {</p>
+
+<p class=MsoNormal>            color: var(--text-muted);</p>
+
+<p class=MsoNormal>            font-size: 15px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* --- 6. RESPONSIVE (T&#7920; &#272;&#7896;NG THÍCH
+&#7912;NG DI &#272;&#7896;NG) --- */</p>
+
+<p class=MsoNormal>        @media (max-width: 768px) {</p>
+
+<p class=MsoNormal>            .nav-links, .btn-nav {</p>
+
+<p class=MsoNormal>                display: none; /* &#7848;n b&#7899;t menu
+trên mobile &#273;&#7875; gi&#7919; &#273;&#7897; g&#7885;n gàng */</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>            .hero h1 {</p>
+
+<p class=MsoNormal>                font-size: 36px;</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>            .hero p {</p>
+
+<p class=MsoNormal>                font-size: 16px;</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>            .hero-cta {</p>
+
+<p class=MsoNormal>                flex-direction: column;</p>
+
+<p class=MsoNormal>                align-items: center;</p>
+
+<p class=MsoNormal>                gap: 15px;</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>            .btn-primary, .btn-secondary {</p>
+
+<p class=MsoNormal>                width: 100%;</p>
+
+<p class=MsoNormal>                max-width: 300px;</p>
+
+<p class=MsoNormal>                text-align: center;</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>    &lt;/style&gt;</p>
+
+<p class=MsoNormal>&lt;/head&gt;</p>
+
+<p class=MsoNormal>&lt;body&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    &lt;header class=&quot;navbar&quot;&gt;</p>
+
+<p class=MsoNormal>        &lt;div
+class=&quot;logo&quot;&gt;FutureOS&lt;/div&gt;</p>
+
+<p class=MsoNormal>        &lt;nav&gt;</p>
+
+<p class=MsoNormal>            &lt;ul class=&quot;nav-links&quot;&gt;</p>
+
+<p class=MsoNormal>                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Trang
+ch&#7911;&lt;/a&gt;&lt;/li&gt;</p>
+
+<p class=MsoNormal>                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tính
+n&#259;ng&lt;/a&gt;&lt;/li&gt;</p>
+
+<p class=MsoNormal>                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;B&#7843;ng
+giá&lt;/a&gt;&lt;/li&gt;</p>
+
+<p class=MsoNormal>                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Liên h&#7879;&lt;/a&gt;&lt;/li&gt;</p>
+
+<p class=MsoNormal>            &lt;/ul&gt;</p>
+
+<p class=MsoNormal>        &lt;/nav&gt;</p>
+
+<p class=MsoNormal>        &lt;a href=&quot;#&quot; class=&quot;btn-nav&quot;&gt;&#272;&#259;ng
+nh&#7853;p&lt;/a&gt;</p>
+
+<p class=MsoNormal>    &lt;/header&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    &lt;main&gt;</p>
+
+<p class=MsoNormal>        &lt;section class=&quot;hero&quot;&gt;</p>
+
+<p class=MsoNormal>            &lt;h1&gt;Xây d&#7921;ng T&#432;&#417;ng
+lai&lt;br&gt;C&#7911;a doanh nghi&#7879;p &lt;span&gt;Thông
+minh&lt;/span&gt;&lt;/h1&gt;</p>
+
+<p class=MsoNormal>            &lt;p&gt;N&#7873;n t&#7843;ng t&#7845;t c&#7843;
+trong m&#7897;t giúp t&#7921; &#273;&#7897;ng hóa quy trình làm vi&#7879;c, t&#7889;i
+&#432;u hi&#7879;u su&#7845;t và t&#259;ng tr&#432;&#7903;ng doanh thu v&#432;&#7907;t
+tr&#7897;i &#273;&#7897;t phá.&lt;/p&gt;</p>
+
+<p class=MsoNormal>            &lt;div class=&quot;hero-cta&quot;&gt;</p>
+
+<p class=MsoNormal>                &lt;a href=&quot;#&quot;
+class=&quot;btn-primary&quot;&gt;B&#7855;t &#273;&#7847;u mi&#7877;n
+phí&lt;/a&gt;</p>
+
+<p class=MsoNormal>                &lt;a href=&quot;#&quot;
+class=&quot;btn-secondary&quot;&gt;Xem video demo&lt;/a&gt;</p>
+
+<p class=MsoNormal>            &lt;/div&gt;</p>
+
+<p class=MsoNormal>        &lt;/section&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        &lt;section class=&quot;features&quot;&gt;</p>
+
+<p class=MsoNormal>            &lt;div class=&quot;feature-card&quot;&gt;</p>
+
+<p class=MsoNormal>                &lt;div class=&quot;icon-box&quot;&gt;</p>
+
+<p class=MsoNormal>                    &lt;svg width=&quot;24&quot;
+height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;
+stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;path
+d=&quot;M13 2L3 14h9l-1 8 10-12h-9l1-8z&quot;/&gt;&lt;/svg&gt;</p>
+
+<p class=MsoNormal>                &lt;/div&gt;</p>
+
+<p class=MsoNormal>                &lt;h3&gt;T&#7889;c &#273;&#7897; t&#7889;i
+&#273;a&lt;/h3&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;H&#7879; th&#7889;ng x&#7917; lý th&#7901;i
+gian th&#7921;c giúp d&#7919; li&#7879;u c&#7911;a b&#7841;n luôn &#273;&#432;&#7907;c
+c&#7853;p nh&#7853;t ngay l&#7853;p t&#7913;c mà không có &#273;&#7897; tr&#7877;.&lt;/p&gt;</p>
+
+<p class=MsoNormal>            &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            &lt;div class=&quot;feature-card&quot;&gt;</p>
+
+<p class=MsoNormal>                &lt;div class=&quot;icon-box&quot;&gt;</p>
+
+<p class=MsoNormal>                    &lt;svg width=&quot;24&quot;
+height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;
+stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;path
+d=&quot;M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z&quot;/&gt;&lt;/svg&gt;</p>
+
+<p class=MsoNormal>                &lt;/div&gt;</p>
+
+<p class=MsoNormal>                &lt;h3&gt;B&#7843;o m&#7853;t tuy&#7879;t
+&#273;&#7889;i&lt;/h3&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;Mã hóa &#273;&#7847;u cu&#7889;i
+chu&#7849;n quân &#273;&#7897;i giúp b&#7843;o v&#7879; thông tin doanh nghi&#7879;p
+và khách hàng an toàn 100%.&lt;/p&gt;</p>
+
+<p class=MsoNormal>            &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            &lt;div class=&quot;feature-card&quot;&gt;</p>
+
+<p class=MsoNormal>                &lt;div class=&quot;icon-box&quot;&gt;</p>
+
+<p class=MsoNormal>                    &lt;svg width=&quot;24&quot;
+height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot;
+stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;path
+d=&quot;M21.21 15.89A10 10 0 1 1 8 2.83M22 12A10 10 0 0 0 12
+2v10z&quot;/&gt;&lt;/svg&gt;</p>
+
+<p class=MsoNormal>                &lt;/div&gt;</p>
+
+<p class=MsoNormal>                &lt;h3&gt;Báo cáo thông minh&lt;/h3&gt;</p>
+
+<p class=MsoNormal>                &lt;p&gt;Phân tích các ch&#7881; s&#7889; v&#7853;n
+hành b&#7857;ng AI tr&#7921;c quan hóa qua bi&#7875;u &#273;&#7891; sinh &#273;&#7897;ng
+giúp &#273;&#432;a ra quy&#7871;t &#273;&#7883;nh chính xác.&lt;/p&gt;</p>
+
+<p class=MsoNormal>            &lt;/div&gt;</p>
+
+<p class=MsoNormal>        &lt;/section&gt;</p>
+
+<p class=MsoNormal>    &lt;/main&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/body&gt;</p>
+
+<p class=MsoNormal>&lt;/html&gt;</p>
+
+</div>
+
+</body>
+
+</html>
